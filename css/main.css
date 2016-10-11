@@ -1,0 +1,52 @@
+/* commons */
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  color: white;
+}
+a{
+  text-decoration: none;
+}
+body{
+  background: #0C0C22;
+}
+.text-center{
+  text-align: center;
+}
+.display-none{
+  display: none;
+}
+.main-header, .main-footer, .social-header{
+  padding: 100px 0 75px;
+}
+
+/* map */
+#map{
+  width: 100%;
+  height: 600px;
+}
+/* info window */
+.gm-style-iw{
+  line-height: 24px;
+  padding: 5px;
+}
+.gm-style-iw h1{
+  color: #2f2f5f;
+  margin-bottom: 10px;
+}
+.gm-style-iw img{
+  margin-right: 5px;
+}
+.gm-style-iw p{
+  color: #777;
+}
+
+/* social */
+.social-link{
+  display: inline-block;
+  padding: 0 15px;
+}
+.twitter-link{
+  opacity: 0.3;
+}

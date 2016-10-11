@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Social Media Widgets</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <!-- facebook widgets codes  -->
+  <div id="fb-root"></div>
+  <script>
+    window.fbAsyncInit = function() {
+      FB.init({
+        appId      : '1189245254470270',
+        xfbml      : true,
+        version    : 'v2.8'
+      });
+      FB.AppEvents.logPageView();
+    };
+
+    (function(d, s, id){
+       var js, fjs = d.getElementsByTagName(s)[0];
+       if (d.getElementById(id)) {return;}
+       js = d.createElement(s); js.id = id;
+       js.src = "//connect.facebook.net/en_US/sdk.js";
+       fjs.parentNode.insertBefore(js, fjs);
+     }(document, 'script', 'facebook-jssdk'));
+  </script>
+
+  <!-- header -->
+  <header class="main-header text-center">
+    <h1>GET IN TOUCH</h1>
+  </header>
+
+  <!-- main content -->
+  <main>
+    <!-- map -->
+    <div id="map">
+    </div>
+
+    <!-- social widgets -->
+    <div id="social" class="text-center">
+      <div class="social-header">
+        <h3><a href="#" class="facebook-link social-link">FACEBOOK</a> / <a href="#" class="twitter-link social-link">TWITTER</a></h3>
+      </div>
+
+      <div class="fb-page" data-href="https://www.facebook.com/qiongrongjiang" data-tabs="timeline" data-width="500" data-height="400" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+        <blockquote cite="https://www.facebook.com/qiongrongjiang" class="fb-xfbml-parse-ignore">
+          <a href="https://www.facebook.com/qiongrongjiang">Qiongrong Jiang</a>
+        </blockquote>
+      </div>
+
+      <div class="twitter display-none">
+        <a class="twitter-timeline" data-width="500" data-height="400" data-link-color="#981ceb" data-chrome="nofooter" href="https://twitter.com/qiongrong_jiang">Tweets by qiongrong_jiang</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- footer -->
+  <footer class="main-footer text-center">
+    <p>
+      © 2016 Qiongrong Jiang. All rights reserved.
+    </p>
+  </footer>
+
+  <!-- scripts -->
+  <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="js/main.js" charset="utf-8"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpDSqJum3o9F2Y1daqyP-ZrQSGIUXV37Q&callback=initMap"
+    async defer></script>
+</body>
+</html>
